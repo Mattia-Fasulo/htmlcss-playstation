@@ -1,12 +1,15 @@
 /* Common */
 :root {
-  --white: #fff;
-  --black: #000;
+  --my-white:#fff;
+  --my-dwhite: ##D9DADC;
+  --my-black: #000;
   --hevenly: #b4d0e7;
-  
+  --my-lgrey:#BEBCBB;
+  --my-grey:#363636;
   --my-dark-grey: #1f1f1f;
-  --my-dark-blu: #161c3b;
+  --my-orange: #CD3D0F;
   --my-blu: #3a6de7;
+  --my-dark-blu: #161c3b;
 }
 
 /* reset */
@@ -25,6 +28,16 @@
   min-height: 50px;
 }
 
+
+.my-btxt {
+  color: var(--my-black);
+
+}
+
+.my-bg-white {
+  background-color: var(--my-white);
+}
+
 .my-bg-dgrey {
   background-color: var(--my-dark-grey);
 }
@@ -34,7 +47,7 @@
 }
 
 .my-bg-black {
-  background-color: var(--black);
+  background-color: var(--my-black);
 }
 
 .my-bg-blu {
@@ -43,8 +56,75 @@
 
 
 /* general */
-body {
-  background-color: white;
+html {
+  overflow: unset;
 }
 
+body {
+  background-color: white;
+
+}
+
+/* header */
+header {
+  height: 120px;
+}
+
+#sony-bar {
+  height: 50px;
+}
+
+nav.navbar {
+  position: sticky;
+  top: 0;
+  height: 80px;
+}
+
+
+
+#btn-nav {
+  background-color: var(--my-grey);
+  color: var(--my-white);
+  border-radius: 24px;
+  padding: 8px 10px;
+  border: none;
+}
+
+/* main */
+/* section hero */
+#hero {
+  min-height: 570px;
+}
+
+
+#hero  .container-fluid:first-child{
+  width: 100%;
+  min-height: 570px;
+  background-color: var(--my-black);
+  background-image: url('../img/jumbo-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+@media all and (min-width: 1200px) {
+  #hero-div {
+    width: 35%!important; 
+  }
+}
+
+@media all and (max-width: 990px) {
+ nav.navbar ul{
+    background-color: var(--my-white);
+    width: 180px;
+    padding: 5px 15px;
+    margin-left: -20px;
+  }
+
+  #second-ul {
+    display: none;
+  }
+}
 
