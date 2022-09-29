@@ -1,0 +1,50 @@
+/* Common */
+:root {
+  --white: #fff;
+  --black: #000;
+  --hevenly: #b4d0e7;
+  
+  --my-dark-grey: #1f1f1f;
+  --my-dark-blu: #161c3b;
+  --my-blu: #3a6de7;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities */
+.debug {
+  border: 1px solid var(--black);
+  background-color: #006cfa;
+  color: var(--black);
+  text-align: center;
+  min-height: 50px;
+}
+
+.my-bg-dgrey {
+  background-color: var(--my-dark-grey);
+}
+
+.my-bg-dblu {
+  background-color: var(--my-dark-blu);
+}
+
+.my-bg-black {
+  background-color: var(--black);
+}
+
+.my-bg-blu {
+  background-color: var(--my-blu);
+}
+
+
+/* general */
+body {
+  background-color: white;
+}
+
+
