@@ -53,6 +53,10 @@
   width: 200px;
 }
 
+.my-bg-lgrey {
+  background-color: var(--my-lgrey);
+}
+
 .my-bg-white {
   background-color: var(--my-white);
 }
@@ -141,7 +145,7 @@ nav.navbar {
 
 
 @media all and (min-width: 1200px) {
-  #hero-div {
+  .hero-div {
     width: 42%!important; 
   }
 
@@ -162,6 +166,7 @@ nav.navbar {
   
 
 }
+
 
 
 
