@@ -28,10 +28,29 @@
   min-height: 50px;
 }
 
+.display-none {
+  display: none;
+}
+
+
 
 .my-btxt {
   color: var(--my-black);
+}
 
+.my-txt-blu {
+  color: var(--my-blu);
+}
+
+.my-txt-grey {
+  color: grey;
+}
+
+.btn-w-150 {
+  width: 150px;
+}
+.btn-w-200 {
+  width: 200px;
 }
 
 .my-bg-white {
@@ -78,6 +97,7 @@ nav.navbar {
   position: sticky;
   top: 0;
   height: 80px;
+  z-index: 1500;
 }
 
 
@@ -107,24 +127,41 @@ nav.navbar {
   background-position: center;
 }
 
+/* section hero-one  */
+#hero-one  .container-fluid{
+  width: 100%;
+  min-height: 570px;
+  background-color: var(--my-black);
+  background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 
 @media all and (min-width: 1200px) {
   #hero-div {
-    width: 35%!important; 
+    width: 42%!important; 
   }
+
+  
+  
 }
 
-@media all and (max-width: 990px) {
+@media all and (min-width: 990px) {
  nav.navbar ul{
     background-color: var(--my-white);
     width: 180px;
-    padding: 5px 15px;
-    margin-left: -20px;
   }
 
   #second-ul {
     display: none;
   }
+
+  
+
 }
+
+
 
