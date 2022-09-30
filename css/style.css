@@ -156,10 +156,56 @@ footer a {
   text-decoration: none;
 }
 
+/* button effect */
+.btn {
+  transition: all 1s linear;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 1px var(--my-dark-grey);
+}
+
+/* hero effect  */
+#hero .card:hover {
+  
+  cursor: pointer;
+  border: 3px solid var(--my-blu);
+  outline-offset: 0.7rem;
+  padding: 0.1rem;
+}
+
+/* carousel effect */
+#carousel div.col-4:hover {
+  cursor: pointer;
+  border-bottom: 3px solid var(--my-blu);
+  color: var(--my-black);
+}
+
+#carousel div.col-4:hover p {
+  color: var(--my-black);
+}
+
+/* effetti nuove-uscite */
+#nuove-uscite .col-6:hover{
+  cursor: pointer;
+  transform: translateY(-25px);
+}
+
+/* effetti sconti */
+#sconti .col-12.col-md-4:hover{
+  cursor: pointer;
+  transform: translateY(-25px);
+}
+
+/* social effect */
+#social .col-6.col-md:hover{
+  cursor: pointer;
+  transform: translateY(-25px);
+}
 
 
-
-
+/* media query */
 @media all and (min-width: 1200px) {
   .hero-div {
     width: 42%!important; 
@@ -170,14 +216,7 @@ footer a {
 }
 
 @media all and (min-width: 990px) {
- nav.navbar ul{
-    background-color: var(--my-white);
-    width: 180px;
-  }
 
-  #second-ul {
-    display: none;
-  }
 
   #text-footer {
    width: 50%;
