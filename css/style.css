@@ -1,13 +1,13 @@
 /* Common */
 :root {
-  --my-white:#fff;
-  --my-dwhite: ##D9DADC;
+  --my-white: #fff;
+  --my-dwhite: ##d9dadc;
   --my-black: #000;
   --hevenly: #b4d0e7;
-  --my-lgrey:#BEBCBB;
-  --my-grey:#363636;
+  --my-lgrey: #bebcbb;
+  --my-grey: #363636;
   --my-dark-grey: #1f1f1f;
-  --my-orange: #CD3D0F;
+  --my-orange: #cd3d0f;
   --my-blu: #3a6de7;
   --my-dark-blu: #161c3b;
 }
@@ -31,8 +31,6 @@
 .display-none {
   display: none;
 }
-
-
 
 .my-btxt {
   color: var(--my-black);
@@ -81,6 +79,9 @@
   background-color: var(--my-blu);
 }
 
+.my-nmt-5 {
+  margin-top: -5px !important;
+}
 
 /* general */
 html {
@@ -89,7 +90,6 @@ html {
 
 body {
   background-color: white;
-
 }
 
 /* header */
@@ -110,9 +110,17 @@ nav.navbar {
 
 .dropdown-menu {
   border: none;
-  margin-top: 25px;
 }
 
+.dropdown-menu .list-group-item {
+  border: 1px solid var(--my-white) !important;
+}
+
+.dropdown-menu .list-group-item:hover {
+  border: 1px solid var(--my-lgrey) !important;
+  border-radius: 20px !important;
+  box-shadow: 0px 0px 5px 0px var(--my-lgrey);
+}
 
 #btn-nav {
   background-color: var(--my-grey);
@@ -121,31 +129,28 @@ nav.navbar {
   border: none;
 }
 
-
-
 /* main */
 /* section hero */
 #hero {
   min-height: 570px;
 }
 
-
-#hero  .container-fluid:first-child{
+#hero .container-fluid:first-child {
   width: 100%;
   min-height: 570px;
   background-color: var(--my-black);
-  background-image: url('../img/jumbo-bg.png');
+  background-image: url("../img/jumbo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 /* section hero-one  */
-#hero-one  .container-fluid{
+#hero-one .container-fluid {
   width: 100%;
   min-height: 570px;
   background-color: var(--my-black);
-  background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+  background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -173,7 +178,6 @@ footer a {
 
 /* hero effect  */
 #hero .card:hover {
-  
   cursor: pointer;
   border: 3px solid var(--my-blu);
   outline-offset: 0.7rem;
@@ -192,44 +196,32 @@ footer a {
 }
 
 /* effetti nuove-uscite */
-#nuove-uscite .col-6:hover{
+#nuove-uscite .col-6:hover {
   cursor: pointer;
   transform: translateY(-25px);
 }
 
 /* effetti sconti */
-#sconti .col-12.col-md-4:hover{
+#sconti .col-12.col-md-4:hover {
   cursor: pointer;
   transform: translateY(-25px);
-  
 }
 
 /* social effect */
-#social .col-6.col-md:hover{
+#social .col-6.col-md:hover {
   cursor: pointer;
   transform: translateY(-25px);
 }
-
 
 /* media query */
 @media all and (min-width: 1200px) {
   .hero-div {
-    width: 42%!important; 
+    width: 42% !important;
   }
-
-  
-  
 }
 
 @media all and (min-width: 990px) {
-
-
   #text-footer {
-   width: 50%;
+    width: 50%;
   }
-
 }
-
-
-
-
