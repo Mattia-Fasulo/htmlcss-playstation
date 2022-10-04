@@ -168,7 +168,7 @@ footer a {
 
 .btn:hover {
   transform: scale(1.1);
-  box-shadow: 1px 1px 1px var(--my-dark-grey);
+  box-shadow: inset 0px 0px 0px 2px var(--my-white);
 }
 
 /* hero effect  */
